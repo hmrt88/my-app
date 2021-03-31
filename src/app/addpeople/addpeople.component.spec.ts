@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NvartabsComponent } from './nvartabs.component';
+import { AddpeopleComponent } from './addpeople.component';
 
-describe('NvartabsComponent', () => {
-  let component: NvartabsComponent;
-  let fixture: ComponentFixture<NvartabsComponent>;
+describe('AddpeopleComponent', () => {
+  let component: AddpeopleComponent;
+  let fixture: ComponentFixture<AddpeopleComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NvartabsComponent ]
+      declarations: [ AddpeopleComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NvartabsComponent);
+    fixture = TestBed.createComponent(AddpeopleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,3 +1,6 @@
+<app-addpeople (listAdd)="AddPeople($event)"></app-addpeople>
+<br>
+<br>
 <table class="table table-striped">
     <tr>
         <th scope="col">Nombre</th>
@@ -8,7 +11,7 @@
         <th scope="col">Balance</th>
     </tr>
 <tbody>
-    <tr *ngFor="let item of list">
+    <tr *ngFor="let item of list | paginate: {itemsPerPage: 5, currentPage: page}">
         <td>{{item.first}}</td>
         <td>{{item.last}}</td>
         <td>{{item.email}}</td>
@@ -18,3 +21,5 @@
     </tr>
 </tbody>
 </table>
+
+<pagination-controls (pageChange)="page = $event"></pagination-controls>

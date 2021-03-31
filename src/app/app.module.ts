@@ -5,19 +5,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListpeopleComponent } from './listpeople/listpeople.component';
 import { HttpClientModule } from '@angular/common/http';
-import { NvartabsComponent } from './nvartabs/nvartabs.component';
-//import { HttpClient } from '@ngular/common/http';
+import { FormsModule } from '@angular/forms';
+import { AddpeopleComponent } from './addpeople/addpeople.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListpeopleComponent,
-    NvartabsComponent
+    // NvartabsComponent,
+    AddpeopleComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
